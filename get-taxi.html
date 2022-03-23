@@ -63,8 +63,8 @@
                 <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
                     <ul class="nav navbar-nav menu mr-auto">
                         <li class="nav-item dropdown submenu active">
-                        <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="get-taxi.html">Zum Flughafen</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="get-taxi.html">Zum Flughafen</a></li>
                         <li class="nav-item"><a class="nav-link" href="get-taxi2.html">Vom Flughafen</a></li>
                         <li class="nav-item"><a class="nav-link" href="about.html">Über Uns</a></li>
                         <li class="nav-item"><a class="nav-link" href="contact.html">Kontakt</a></li>
@@ -90,7 +90,7 @@
             </div>
         </div>
     </header>
-    <section class="breadcrumb_area" style="background: url(./img/banner_bg_four.jpg);">
+    <section class="breadcrumb_area" style="background: url(./img/vomzum.jpg);">
         <div class="overlay_bg"></div>
         <div class="container">
             <div class="breadcrumb_content text-center">
@@ -101,273 +101,127 @@
                         <li class="breadcrumb-item active" aria-current="page">Get Taxi</li>
                     </ol>
                 </nav>
-            </div> 
+            </div>
         </div>
     </section>
-    
-    <section class="booking_form_area_two sec_pad bg_one">
+
+    <section class="booking_form_area bg_one">
         <div class="container">
             <div class="booking_slider slick">
                 <div class="booking_form_info">
                     <div class="tab_img">
                         <div class="b_overlay_bg"></div>
-                        <img src="img/slider/booking_car.png" alt="">
+                        <img src="img/airplane-img.png" alt="">
                     </div>
                     <div class="boking_content">
-                        <h2>Booking Taxi Online</h2>
-                        <form action="#" class="row booking_form">
+                        <h2>Jetzt Online Bestellen</h2>
+                        <form action="booking-form.php" class="row booking_form" data-pickme="contact-froms">
                             <div class="col-md-12">
                                 <div class="form-group choose_item">
                                     <label>
-                                        <input type="radio" value="standard" name="radio-group">
-                                        <span>Standard</span>
+                                        <input type="radio" value="standard" name="radio_group">
+                                        <span>Vom Flughafen</span>
                                     </label>
                                     <label>
-                                        <input type="radio" value="business" name="radio-group" checked>
-                                        <span>ECONOMY</span>
-                                    </label>
-                                    <label>
-                                        <input type="radio" value="vip" name="radio-group">
-                                        <span>Business</span>
-                                    </label>
-                                    <label>
-                                        <input type="radio" value="bus" name="radio-group">
-                                        <span>VIP</span>
+                                        <input type="radio" value="Economy" name="radio_group" checked>
+                                        <span>Zum Flughafen</span>
                                     </label>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="&#xe08a  Your Name">
+                                    <input type="text" class="form-control" name="name" placeholder="&#xe08a Name">
                                     <label class="border_line"></label>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="number" class="form-control" placeholder="&#xe090  Phone">
+                                    <input type="number" class="form-control" name="phone" placeholder="&#xe090  Mobile">
                                     <label class="border_line"></label>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="&#xe01d  Start Destination">
+                                    <input type="text" class="form-control" name="sdestination" placeholder="&#xe01d  Ort">
                                     <label class="border_line"></label>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="&#xe01d  End Destination">
+                                    <input type="text" class="form-control" name="edestination" placeholder="&#xe01d  Plz">
                                     <label class="border_line"></label>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="text" class="form-control date-input-css" placeholder="&#xe06b  Time and Date">
+                                    <input type="text" class="form-control" name="sdestination" placeholder="&#xe01d  Ziel Straße">
                                     <label class="border_line"></label>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="&#xe0db;  Car Type">
+                                    <input type="text" class="form-control" name="edestination" placeholder="&#xe01d  Nummer">
+                                    <label class="border_line"></label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control date-input-css" name="date" placeholder="&#xe06b  Datum und Uhrzeit">
+                                    <label class="border_line"></label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="type" placeholder="&#xe08a  Personenzahl">
+                                    <label class="border_line"></label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="type" placeholder="&#xe08a  Anzahl der Koffer">
+                                    <label class="border_line"></label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="type" placeholder="&#xe08a  Kindersitz">
+                                    <label class="border_line"></label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="type" placeholder="Kommentar">
+                                    <label class="border_line"></label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="type" placeholder="Zahlung (Bar/Karte)">
                                     <label class="border_line"></label>
                                 </div>
                             </div>
                             <div class="col-lg-12">
                                 <div class="form-group">
-                                    <a href="#" class="btn slider_btn dark_hover">Book Now !</a>
+                                    <button type="submit" name="submit" class="btn slider_btn dark_hover">Book Now !</button>
+                                </div>
+
+                                <div class="form-result alert">
+                                    <div class="content"></div>
                                 </div>
                             </div>
                         </form>
                     </div>
                 </div>
-                <div class="booking_form_info two">
-                    <div class="tab_img">
-                        <div class="b_overlay_bg"></div>
-                        <img src="img/slider/bike-img.png" alt="">
-                    </div>
-                    <div class="boking_content">
-                        <h2>Booking Bike Online</h2>
-                        <form action="#" class="row booking_form">
-                            <div class="col-md-12">
-                                <div class="form-group choose_item">
-                                    <label>
-                                        <input type="radio" value="standard" name="radio-group">
-                                        <span>Standard</span>
-                                    </label>
-                                    <label>
-                                        <input type="radio" value="business" name="radio-group" checked>
-                                        <span>ECONOMY</span>
-                                    </label>
-                                    <label>
-                                        <input type="radio" value="vip" name="radio-group">
-                                        <span>Business</span>
-                                    </label>
-                                    <label>
-                                        <input type="radio" value="bus" name="radio-group">
-                                        <span>VIP</span>
-                                    </label>
-                                </div>
-                            </div>
-                             <div class="col-md-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="&#xe08a  Your Name">
-                                    <label class="border_line"></label>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <input type="number" class="form-control" placeholder="&#xe090  Phone">
-                                    <label class="border_line"></label>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="&#xe01d  Start Destination">
-                                    <label class="border_line"></label>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="&#xe01d  End Destination">
-                                    <label class="border_line"></label>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control date-input-css" placeholder="&#xe06b  Time and Date">
-                                    <label class="border_line"></label>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="&#xe0db;  Car Type">
-                                    <label class="border_line"></label>
-                                </div>
-                            </div>
-                            <div class="col-lg-12">
-                                <div class="form-group">
-                                    <a href="#" class="btn slider_btn dark_hover">Book Now !</a>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <div class="booking_form_info three">
-                    <div class="tab_img">
-                        <div class="b_overlay_bg"></div>
-                        <img src="img/slider/airplane-img.png" alt="">
-                    </div>
-                    <div class="boking_content">
-                        <h2>Booking Airplane Online</h2>
-                        <form action="#" class="row booking_form">
-                            <div class="col-md-12">
-                                <div class="form-group choose_item">
-                                    <label>
-                                        <input type="radio" value="standard" name="radio-group">
-                                        <span>Standard</span>
-                                    </label>
-                                    <label>
-                                        <input type="radio" value="business" name="radio-group" checked>
-                                        <span>ECONOMY</span>
-                                    </label>
-                                    <label>
-                                        <input type="radio" value="vip" name="radio-group">
-                                        <span>Business</span>
-                                    </label>
-                                    <label>
-                                        <input type="radio" value="bus" name="radio-group">
-                                        <span>VIP</span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="&#xe08a  Your Name">
-                                    <label class="border_line"></label>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <input type="number" class="form-control" placeholder="&#xe090  Phone">
-                                    <label class="border_line"></label>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="&#xe01d  Start Destination">
-                                    <label class="border_line"></label>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="&#xe01d  End Destination">
-                                    <label class="border_line"></label>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control date-input-css" placeholder="&#xe06b  Time and Date">
-                                    <label class="border_line"></label>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="&#xe0db;  Car Type">
-                                    <label class="border_line"></label>
-                                </div>
-                            </div>
-                            <div class="col-lg-12">
-                                <div class="form-group">
-                                    <a href="#" class="btn slider_btn dark_hover">Book Now !</a>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
+            </div> </div></section>
+
     <section class="city_location_area sec_pad">
         <div class="container">
             <div class="section_title text-center">
-                <h5>Let's go With us</h5>
-                <h2>Our City Tariffs</h2>
+                <h2>Unsere Preise</h2>
             </div>
             <div class="city_location_tab">
-                <ul class="nav nav-tabs location_inner_tab" id="myTab2" role="tablist">
-                    <li class="nav-item">
-                        <a class="nav-link active" id="taxi-tab" data-toggle="tab" href="#taxi" role="tab" aria-controls="taxi" aria-selected="true"><i class="flaticon-taxi"></i>Taxi Book</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="plan-tab" data-toggle="tab" href="#plan" role="tab" aria-controls="plan" aria-selected="false"><i class="flaticon-plane-1"></i>Airplane Book</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="bike-tab" data-toggle="tab" href="#bike" role="tab" aria-controls="bike" aria-selected="false"><i class="flaticon-bike"></i>Bike Book</a>
-                    </li>
-                </ul>
                 <div class="tab-content" id="myTabContent2">
                     <div class="tab-pane fade show active" id="taxi" role="tabpanel" aria-labelledby="taxi-tab">
-                        <ul class="nav nav-tabs booking_quality_tab" role="tablist">
-                            <li class="nav-item">
-                                <a class="nav-link active" id="one-tab" data-toggle="tab" href="#one" role="tab" aria-controls="one" aria-selected="true">Standard</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" id="two-tab" data-toggle="tab" href="#two" role="tab" aria-controls="two" aria-selected="false">Business</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" id="three-tab" data-toggle="tab" href="#three" role="tab" aria-controls="three" aria-selected="false">VIP</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" id="four-tab" data-toggle="tab" href="#four" role="tab" aria-controls="four" aria-selected="false">Comfort</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" id="five-tab" data-toggle="tab" href="#five" role="tab" aria-controls="five" aria-selected="false">Premium</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" id="six-tab" data-toggle="tab" href="#six" role="tab" aria-controls="six" aria-selected="false">Economy</a>
-                            </li>
-                        </ul>
                         <div class="tab-content boking_information">
                             <div class="tab-pane fade show active" id="one" role="tabpanel" aria-labelledby="one-tab">
                                 <div class="row">
@@ -396,7 +250,7 @@
                                     <div class="col-lg-6">
                                         <div class="media location-milage">
                                             <div class="media-body">
-                                                <h4>Get the Best Price Of Taxi In Your Place</h4>
+                                                <h4>Get the Best Price Of Taxi In Your Available Area</h4>
                                                 <p>Come to our storage and pick your item.</p>
                                             </div>
                                             <div class="mile">
@@ -407,7 +261,7 @@
                                     <div class="col-lg-6">
                                         <div class="media location-milage">
                                             <div class="media-body">
-                                                <h4>Taxi drivers for hire in your place</h4>
+                                                <h4>Taxi drivers for hire in your city</h4>
                                                 <p>Come to our storage and pick your item.</p>
                                             </div>
                                             <div class="mile">
@@ -456,7 +310,7 @@
                                         <div class="media location-milage">
                                             <div class="media-body">
                                                 <h4>Get the Best Price Of Taxi In Your Place</h4>
-                                                <p>We will bring you quickly and comfortably in your place.</p>
+                                                <p>We will bring you quickly and comfortably in your city.</p>
                                             </div>
                                             <div class="mile">
                                                 $4,2<span>/ km</span>
@@ -477,7 +331,7 @@
                                     <div class="col-lg-6">
                                         <div class="media location-milage">
                                             <div class="media-body">
-                                                <h4>Taxi drivers for hire in your place</h4>
+                                                <h4>Taxi drivers for hire in your city</h4>
                                                 <p>Come to our storage and pick your item.</p>
                                             </div>
                                             <div class="mile">
@@ -526,7 +380,7 @@
                                         <div class="media location-milage">
                                             <div class="media-body">
                                                 <h4>Get the Best Price Of Taxi In Your Place</h4>
-                                                <p>We will bring you quickly and comfortably in your place.</p>
+                                                <p>We will bring you quickly and comfortably in your city.</p>
                                             </div>
                                             <div class="mile">
                                                 $4,2<span>/ km</span>
@@ -547,7 +401,7 @@
                                     <div class="col-lg-6">
                                         <div class="media location-milage">
                                             <div class="media-body">
-                                                <h4>Taxi drivers for hire in your place</h4>
+                                                <h4>Taxi drivers for hire in your city</h4>
                                                 <p>Come to our storage and pick your item.</p>
                                             </div>
                                             <div class="mile">
@@ -596,7 +450,7 @@
                                         <div class="media location-milage">
                                             <div class="media-body">
                                                 <h4>Get the Best Price Of Taxi In Your Place</h4>
-                                                <p>We will bring you quickly and comfortably in your place.</p>
+                                                <p>We will bring you quickly and comfortably in your city.</p>
                                             </div>
                                             <div class="mile">
                                                 $4,2<span>/ km</span>
@@ -617,7 +471,7 @@
                                     <div class="col-lg-6">
                                         <div class="media location-milage">
                                             <div class="media-body">
-                                                <h4>Taxi drivers for hire in your place</h4>
+                                                <h4>Taxi drivers for hire in your city</h4>
                                                 <p>Come to our storage and pick your item.</p>
                                             </div>
                                             <div class="mile">
@@ -666,7 +520,7 @@
                                         <div class="media location-milage">
                                             <div class="media-body">
                                                 <h4>Get the Best Price Of Taxi In Your Place</h4>
-                                                <p>We will bring you quickly and comfortably in your place.</p>
+                                                <p>We will bring you quickly and comfortably in your city.</p>
                                             </div>
                                             <div class="mile">
                                                 $4,2<span>/ km</span>
@@ -687,7 +541,7 @@
                                     <div class="col-lg-6">
                                         <div class="media location-milage">
                                             <div class="media-body">
-                                                <h4>Taxi drivers for hire in your place</h4>
+                                                <h4>Taxi drivers for hire in your city</h4>
                                                 <p>Come to our storage and pick your item.</p>
                                             </div>
                                             <div class="mile">
@@ -736,7 +590,7 @@
                                         <div class="media location-milage">
                                             <div class="media-body">
                                                 <h4>Get the Best Price Of Taxi In Your Place</h4>
-                                                <p>We will bring you quickly and comfortably in your place.</p>
+                                                <p>We will bring you quickly and comfortably in your city.</p>
                                             </div>
                                             <div class="mile">
                                                 $4,2<span>/ km</span>
@@ -757,7 +611,7 @@
                                     <div class="col-lg-6">
                                         <div class="media location-milage">
                                             <div class="media-body">
-                                                <h4>Taxi drivers for hire in your place</h4>
+                                                <h4>Taxi drivers for hire in your city</h4>
                                                 <p>Come to our storage and pick your item.</p>
                                             </div>
                                             <div class="mile">
@@ -830,7 +684,7 @@
                                         <div class="media location-milage">
                                             <div class="media-body">
                                                 <h4>Get the Best Price Of Taxi In Your Place</h4>
-                                                <p>We will bring you quickly and comfortably in your place.</p>
+                                                <p>We will bring you quickly and comfortably in your city.</p>
                                             </div>
                                             <div class="mile">
                                                 $4,2<span>/ km</span>
@@ -851,7 +705,7 @@
                                     <div class="col-lg-6">
                                         <div class="media location-milage">
                                             <div class="media-body">
-                                                <h4>Taxi drivers for hire in your place</h4>
+                                                <h4>Taxi drivers for hire in your city</h4>
                                                 <p>Come to our storage and pick your item.</p>
                                             </div>
                                             <div class="mile">
@@ -900,7 +754,7 @@
                                         <div class="media location-milage">
                                             <div class="media-body">
                                                 <h4>Get the Best Price Of Taxi In Your Place</h4>
-                                                <p>We will bring you quickly and comfortably in your place.</p>
+                                                <p>We will bring you quickly and comfortably in your city.</p>
                                             </div>
                                             <div class="mile">
                                                 $4,2<span>/ km</span>
@@ -921,7 +775,7 @@
                                     <div class="col-lg-6">
                                         <div class="media location-milage">
                                             <div class="media-body">
-                                                <h4>Taxi drivers for hire in your place</h4>
+                                                <h4>Taxi drivers for hire in your city</h4>
                                                 <p>Come to our storage and pick your item.</p>
                                             </div>
                                             <div class="mile">
@@ -970,7 +824,7 @@
                                         <div class="media location-milage">
                                             <div class="media-body">
                                                 <h4>Get the Best Price Of Taxi In Your Place</h4>
-                                                <p>We will bring you quickly and comfortably in your place.</p>
+                                                <p>We will bring you quickly and comfortably in your city.</p>
                                             </div>
                                             <div class="mile">
                                                 $4,2<span>/ km</span>
@@ -991,7 +845,7 @@
                                     <div class="col-lg-6">
                                         <div class="media location-milage">
                                             <div class="media-body">
-                                                <h4>Taxi drivers for hire in your place</h4>
+                                                <h4>Taxi drivers for hire in your city</h4>
                                                 <p>Come to our storage and pick your item.</p>
                                             </div>
                                             <div class="mile">
@@ -1040,7 +894,7 @@
                                         <div class="media location-milage">
                                             <div class="media-body">
                                                 <h4>Get the Best Price Of Taxi In Your Place</h4>
-                                                <p>We will bring you quickly and comfortably in your place.</p>
+                                                <p>We will bring you quickly and comfortably in your city.</p>
                                             </div>
                                             <div class="mile">
                                                 $4,2<span>/ km</span>
@@ -1061,7 +915,7 @@
                                     <div class="col-lg-6">
                                         <div class="media location-milage">
                                             <div class="media-body">
-                                                <h4>Taxi drivers for hire in your place</h4>
+                                                <h4>Taxi drivers for hire in your city</h4>
                                                 <p>Come to our storage and pick your item.</p>
                                             </div>
                                             <div class="mile">
@@ -1110,7 +964,7 @@
                                         <div class="media location-milage">
                                             <div class="media-body">
                                                 <h4>Get the Best Price Of Taxi In Your Place</h4>
-                                                <p>We will bring you quickly and comfortably in your place.</p>
+                                                <p>We will bring you quickly and comfortably in your city.</p>
                                             </div>
                                             <div class="mile">
                                                 $4,2<span>/ km</span>
@@ -1131,7 +985,7 @@
                                     <div class="col-lg-6">
                                         <div class="media location-milage">
                                             <div class="media-body">
-                                                <h4>Taxi drivers for hire in your place</h4>
+                                                <h4>Taxi drivers for hire in your city</h4>
                                                 <p>Come to our storage and pick your item.</p>
                                             </div>
                                             <div class="mile">
@@ -1180,7 +1034,7 @@
                                         <div class="media location-milage">
                                             <div class="media-body">
                                                 <h4>Get the Best Price Of Taxi In Your Place</h4>
-                                                <p>We will bring you quickly and comfortably in your place.</p>
+                                                <p>We will bring you quickly and comfortably in your city.</p>
                                             </div>
                                             <div class="mile">
                                                 $4,2<span>/ km</span>
@@ -1201,7 +1055,7 @@
                                     <div class="col-lg-6">
                                         <div class="media location-milage">
                                             <div class="media-body">
-                                                <h4>Taxi drivers for hire in your place</h4>
+                                                <h4>Taxi drivers for hire in your city</h4>
                                                 <p>Come to our storage and pick your item.</p>
                                             </div>
                                             <div class="mile">
@@ -1274,7 +1128,7 @@
                                         <div class="media location-milage">
                                             <div class="media-body">
                                                 <h4>Get the Best Price Of Taxi In Your Place</h4>
-                                                <p>We will bring you quickly and comfortably in your place.</p>
+                                                <p>We will bring you quickly and comfortably in your city.</p>
                                             </div>
                                             <div class="mile">
                                                 $4,2<span>/ km</span>
@@ -1295,7 +1149,7 @@
                                     <div class="col-lg-6">
                                         <div class="media location-milage">
                                             <div class="media-body">
-                                                <h4>Taxi drivers for hire in your place</h4>
+                                                <h4>Taxi drivers for hire in your city</h4>
                                                 <p>Come to our storage and pick your item.</p>
                                             </div>
                                             <div class="mile">
@@ -1344,7 +1198,7 @@
                                         <div class="media location-milage">
                                             <div class="media-body">
                                                 <h4>Get the Best Price Of Taxi In Your Place</h4>
-                                                <p>We will bring you quickly and comfortably in your place.</p>
+                                                <p>We will bring you quickly and comfortably in your city.</p>
                                             </div>
                                             <div class="mile">
                                                 $4,2<span>/ km</span>
@@ -1365,7 +1219,7 @@
                                     <div class="col-lg-6">
                                         <div class="media location-milage">
                                             <div class="media-body">
-                                                <h4>Taxi drivers for hire in your place</h4>
+                                                <h4>Taxi drivers for hire in your city</h4>
                                                 <p>Come to our storage and pick your item.</p>
                                             </div>
                                             <div class="mile">
@@ -1414,7 +1268,7 @@
                                         <div class="media location-milage">
                                             <div class="media-body">
                                                 <h4>Get the Best Price Of Taxi In Your Place</h4>
-                                                <p>We will bring you quickly and comfortably in your place.</p>
+                                                <p>We will bring you quickly and comfortably in your city.</p>
                                             </div>
                                             <div class="mile">
                                                 $4,2<span>/ km</span>
@@ -1435,7 +1289,7 @@
                                     <div class="col-lg-6">
                                         <div class="media location-milage">
                                             <div class="media-body">
-                                                <h4>Taxi drivers for hire in your place</h4>
+                                                <h4>Taxi drivers for hire in your city</h4>
                                                 <p>Come to our storage and pick your item.</p>
                                             </div>
                                             <div class="mile">
@@ -1484,7 +1338,7 @@
                                         <div class="media location-milage">
                                             <div class="media-body">
                                                 <h4>Get the Best Price Of Taxi In Your Place</h4>
-                                                <p>We will bring you quickly and comfortably in your place.</p>
+                                                <p>We will bring you quickly and comfortably in your city.</p>
                                             </div>
                                             <div class="mile">
                                                 $4,2<span>/ km</span>
@@ -1505,7 +1359,7 @@
                                     <div class="col-lg-6">
                                         <div class="media location-milage">
                                             <div class="media-body">
-                                                <h4>Taxi drivers for hire in your place</h4>
+                                                <h4>Taxi drivers for hire in your city</h4>
                                                 <p>Come to our storage and pick your item.</p>
                                             </div>
                                             <div class="mile">
@@ -1554,7 +1408,7 @@
                                         <div class="media location-milage">
                                             <div class="media-body">
                                                 <h4>Get the Best Price Of Taxi In Your Place</h4>
-                                                <p>We will bring you quickly and comfortably in your place.</p>
+                                                <p>We will bring you quickly and comfortably in your city.</p>
                                             </div>
                                             <div class="mile">
                                                 $4,2<span>/ km</span>
@@ -1575,7 +1429,7 @@
                                     <div class="col-lg-6">
                                         <div class="media location-milage">
                                             <div class="media-body">
-                                                <h4>Taxi drivers for hire in your place</h4>
+                                                <h4>Taxi drivers for hire in your city</h4>
                                                 <p>Come to our storage and pick your item.</p>
                                             </div>
                                             <div class="mile">
@@ -1623,7 +1477,7 @@
                                     <div class="col-lg-6">
                                         <div class="media location-milage">
                                             <div class="media-body">
-                                                <h4>Taxi drivers for hire in your place</h4>
+                                                <h4>Taxi drivers for hire in your city</h4>
                                                 <p>Come to our storage and pick your item.</p>
                                             </div>
                                             <div class="mile">
@@ -1668,7 +1522,7 @@
                                         <div class="media location-milage">
                                             <div class="media-body">
                                                 <h4>Get the Best Price Of Taxi In Your Place</h4>
-                                                <p>We will bring you quickly and comfortably in your place.</p>
+                                                <p>We will bring you quickly and comfortably in your city.</p>
                                             </div>
                                             <div class="mile">
                                                 $4,2<span>/ km</span>
@@ -1683,61 +1537,8 @@
             </div>
         </div>
     </section>
-    
-    <section class="get_app_area sec_pad">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-7">
-                    <div class="get_app_content">
-                        <div class="section_title">
-                            <h5>Search Pickme App</h5>
-                            <h2>Get PickMe APP Now</h2>
-                        </div>
-                        <p>Why I say old chap that is spiffing in my flat a blinding shot, Elizabeth blow off arse ummm I'm telling sloshed smashing .!</p>
-                        <ul>
-                            <li>Quick & Easy Booking</li>
-                            <li>24/7 Service Available</li>
-                            <li>Reliable GPS Enabled</li>
-                            <li>Cost Effective</li>
-                        </ul>
-                        <a href="#" class="app_btn slider_btn"><img src="img/icon/play-store.png" alt="">Google Play</a>
-                        <a href="#" class="app_btn_two slider_btn"><img src="img/icon/apple-store.png" alt="">App Store</a>
-                    </div>
-                </div>
-                <div class="col-lg-5 app_image">
-                    <div class="image_first">
-                        <img src="img/phone_one.png" alt="">
-                        <div class="shadow_bottom"></div>
-                    </div>
-                    <div class="image_two">
-                        <img src="img/phone_two.png" alt="">
-                        <div class="shadow_bottom"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <section class="call_action_area">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-7">
-                    <div class="action_img">
-                        <div class="overlay_bg"></div>
-                        <img src="img/action_img.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-lg-5 d-flex align-items-center">
-                    <div class="action_content">
-                        <h3>Call us to Book a Taxi</h3>
-                        <a href="#" class="call_btn">(964) 444-6500</a>
-                        <p>The operator will call back immediately and report the cost of travel</p>
-                        <a href="#" class="slider_btn dark_hover">Discover <i class="icon_plus"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+
+
 
     <footer class="footer_area sec_pad">
         <div class="container">
